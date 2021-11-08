@@ -70,7 +70,7 @@ class BotBoleto:
         sleep(4)
         driver.close()
         sleep(7)
-        self.enviar_boleto_email('pablolanza75@gmail.com', 'cruzeiro')
+        self.enviar_boleto_email('', '')
 
     
     def enviar_boleto_email(self, email, senha):
@@ -87,7 +87,7 @@ class BotBoleto:
         msg = MIMEMultipart()
         msg['Subject'] = 'Boleto Faculdade'
         msg['From'] = email
-        msg['To'] = 'ana.lanza@hotmail.com'
+        msg['To'] = ''
         msg.attach(MIMEText(corpo, 'plain'))
         
         caminho_arquivo = 'C:\\Users\\Ana Paula\\Downloads\\boleto.pdf'
